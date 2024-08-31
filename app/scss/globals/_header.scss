@@ -1,0 +1,52 @@
+
+@use '../globals/utilities' as u;
+@use '../globals/variables' as vars;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 1rem;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 1em 2em;
+
+    &:is(:hover, :focus-visible) {
+        background-color: var(--clr-light);
+        transition: all ease-in .25s;
+    }
+}
+
+.tickets {
+    background-color: var(--clr-accent-primary);
+    color: var(--clr-dark);   
+}
+
+.menu {
+    outline: 1px solid var(--clr-light);
+
+    &:is(:hover, :focus-visible) {
+        color: var(--clr-dark);
+
+        .menu-icon path {
+            stroke: var(--clr-dark);
+        }
+    }
+}

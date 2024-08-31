@@ -1,0 +1,35 @@
+
+/* UTILITIES */
+
+$breakpoints: (
+    "medium": 43.75em,
+    "large": 56.25em,
+    "xlarge": 90em,
+);
+
+@mixin breakpoint($size) {
+    @media (width > map-get($breakpoints-up, $size)) {
+        @content;
+    }
+}
+
+@mixin breakpoint-down($size) {
+    @media (width < map-get($breakpoints-down, $size)) {
+        @content;
+    }
+}
+
+.wrapper {
+    --max-width: 75rem;
+    --inline-padding: .75rem;
+    width: min(100% - var(--inline-padding) * 2, var(--max-width));
+    margin-inline: auto;
+}
+
+.flow {
+    --flow-space: 1rem;
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space), 1rem;
+}
