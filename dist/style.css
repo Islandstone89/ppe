@@ -136,23 +136,60 @@ textarea:not([rows]) {
   src: url("../../../assets/fonts/RobotoSlab-Bold.woff2") format("woff2");
   font-weight: 700;
 }
-/* Custom Properties */
+/* CUSTOM PROPERTIES*/
 :root {
   /* PRIMITIVE PROPERTIES */
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(0, 0%, 0%);
   --clr-almost-white: hsl(0, 0%, 87%);
   --clr-yellow: hsl(60, 100%, 61%);
-  --fs-serif: "Roboto Slab", serif;
-  --fs-sans-serif-1: "Roboto", sans-serif;
-  --fs-sans-serif-2: "Saira Condensed", sans-serif;
-  --fs-sans-serif-3: "Poppins", sans-serif;
+  --ff-serif: "Roboto Slab", serif;
+  --ff-sans-serif-1: "Roboto", sans-serif;
+  --ff-sans-serif-2: "Saira Condensed", sans-serif;
+  --ff-sans-serif-3: "Poppins", sans-serif;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --size-12: .75rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-24: 1.5rem;
+  --size-28: 1.75rem;
+  --size-32: 2rem;
+  --size-44: 2.75rem;
+  --size-56: 3.5rem;
+  --size-96: 6rem;
+  --size-120: 7.5rem;
   /* SEMANTIC PROPERTIES */
   --clr-bg: var(--clr-black);
   --clr-light: var(--clr-white);
   --clr-dark: var(--clr-black);
   --clr-accent-primary: var(--clr-yellow);
   --clr-accent-secondary: var(--clr-almost-white);
+  --ff-primary-1: var(--ff-sans-serif-1);
+  --ff-primary-2: var(--ff-sans-serif-2);
+  --ff-secondary-1: var(--ff-serif);
+  --ff-secondary-2: var(--ff-sans-serif-3);
+  --fs-100: var(--size-16);
+  --fs-200: var(--size-18);
+  --fs-300: var(--size-20);
+  --fs-400: var(--size-28);
+  --fs-500: var(--size-32);
+  --fs-600: var(--size-44);
+  --fs-700: var(--size-56);
+  --fs-800: var(--size-96);
+  --fw-regular: var(--fw-400);
+  --fw-medium: var(--fw-500);
+  --fw-semibold: var(--fw-600);
+  --fw-bold: var(--fw-700);
+  --fw-extrabold: var(--fw-800);
+  --space-100: var(--size-12);
+  --space-200: var(--size-16);
+  --space-300: var(--size-20);
+  --space-400: var(--size-24);
 }
 
 /* UTILITIES */
@@ -164,18 +201,20 @@ textarea:not([rows]) {
 }
 
 .flow {
-  --flow-space: 1rem;
+  --flow-space: var(-space-300);
 }
 
 .flow > * + * {
-  margin-block-start: var(--flow-space), 1rem;
+  margin-block-start: var(--flow-space, 1rem);
 }
 
+/* BASE STYLES */
 body {
   background-color: var(--clr-bg);
   color: var(--clr-light);
 }
 
+/* HEADER STYLES */
 .header {
   display: flex;
   align-items: center;
@@ -220,4 +259,46 @@ body {
 }
 .menu:is(:hover, :focus-visible) .menu-icon path {
   stroke: var(--clr-dark);
+}
+
+.bands {
+  font-family: var(--ff-primary-2);
+}
+
+.section-heading {
+  font-size: clamp(3.5rem, 2.78rem + 3.57vw, 6rem);
+}
+
+.bands__tagline {
+  font-family: var(--ff-secondary-1);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.05em;
+}
+
+.bands__list {
+  --min-width: 350px;
+  --grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-width)), 1fr));
+  gap: var(--grid-gap);
+}
+
+.band {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: var(--fw-extrabold);
+  letter-spacing: 0.01em;
+}
+
+.band__link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+
+.band__link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -2,9 +2,9 @@
 /* UTILITIES */
 
 $breakpoints: (
-    "medium": 43.75em,
-    "large": 56.25em,
-    "xlarge": 90em,
+    "medium": 43.7rem,
+    "large": 56.2rem,
+    "xlarge": 90rem,
 );
 
 @mixin breakpoint($size) {
@@ -27,9 +27,9 @@ $breakpoints: (
 }
 
 .flow {
-    --flow-space: 1rem;
+    --flow-space: var(-space-300);
 }
 
 .flow > * + * {
-    margin-block-start: var(--flow-space), 1rem;
+    margin-block-start: var(--flow-space, 1rem);
 }
