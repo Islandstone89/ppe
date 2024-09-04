@@ -163,6 +163,8 @@ textarea:not([rows]) {
   --size-56: 3.5rem;
   --size-96: 6rem;
   --size-120: 7.5rem;
+  --size-px-20: 20px;
+  --size-px-32: 32px;
   /* SEMANTIC PROPERTIES */
   --clr-bg: var(--clr-black);
   --clr-light: var(--clr-white);
@@ -190,6 +192,10 @@ textarea:not([rows]) {
   --space-200: var(--size-16);
   --space-300: var(--size-20);
   --space-400: var(--size-24);
+  --space-500: var(--size-28);
+  --space-600: var(--size-56);
+  --space-px-100: var(--size-px-20);
+  --space-px-200: var(--size-px-32);
 }
 
 /* UTILITIES */
@@ -263,10 +269,12 @@ body {
 
 .bands {
   font-family: var(--ff-primary-2);
+  font-weight: var(--fw-extrabold);
 }
 
 .section-heading {
-  font-size: clamp(3.5rem, 2.78rem + 3.57vw, 6rem);
+  font-size: clamp(var(--fs-700), 2.78rem + 3.57vw, var(--fs-800));
+  text-transform: uppercase;
 }
 
 .bands__tagline {
@@ -277,11 +285,15 @@ body {
 }
 
 .bands__list {
+  --flow-space: var(--space-500);
   --min-width: 350px;
-  --grid-gap: 20px;
+  --grid-column-gap: var(--space-px-100);
+  --grid-row-gap: var(--space-px-200);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-width)), 1fr));
-  gap: var(--grid-gap);
+  -moz-column-gap: var(--grid-column-gap);
+       column-gap: var(--grid-column-gap);
+  row-gap: var(--grid-row-gap);
 }
 
 .band {
@@ -289,6 +301,11 @@ body {
   text-transform: uppercase;
   font-weight: var(--fw-extrabold);
   letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.band__name {
+  --flow-space: var(--space-300);
 }
 
 .band__link {
