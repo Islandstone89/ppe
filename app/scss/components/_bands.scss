@@ -1,14 +1,13 @@
 
-
 .bands {
     font-family: var(--ff-primary-2);
     font-weight: var(--fw-extrabold);
+    padding-block: var(--space-600);
 }
 
 .section-heading {
     font-size: clamp(var(--fs-700), 2.78rem + 3.57vw, var(--fs-800));
     text-transform: uppercase;
-    
 }
 
 .bands__tagline {

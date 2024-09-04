@@ -1,4 +1,6 @@
 
+@use '../globals/fonts' as fonts;
+
 /* CUSTOM PROPERTIES*/
 
 :root {
@@ -7,8 +9,10 @@
 
     --clr-white: hsl(0, 0%, 100%);
     --clr-black: hsl(0, 0%, 0%);
-    --clr-almost-white: hsl(0, 0%, 87%);
+    --clr-almost-white: #dedede;
     --clr-yellow: hsl(60, 100%, 61%);
+    --clr-grey: hsl(214, 9%, 45%);
+    --clr-desaturated-grey: hsl(0, 0%, 56%);
 
     --ff-serif: 'Roboto Slab', serif;
     --ff-sans-serif-1: 'Roboto', sans-serif;
@@ -42,8 +46,10 @@
     --clr-bg: var(--clr-black);
     --clr-light: var(--clr-white);
     --clr-dark: var(--clr-black);
-    --clr-accent-primary: var(--clr-yellow);
-    --clr-accent-secondary: var(--clr-almost-white);
+    --clr-accent-100: var(--clr-yellow);
+    --clr-accent-200: var(--clr-almost-white);
+    --clr-accent-300: var(--clr-grey);
+    --clr-accent-400: var(--clr-desaturated-grey);
 
     --ff-primary-1: var(--ff-sans-serif-1);
     --ff-primary-2: var(--ff-sans-serif-2);
