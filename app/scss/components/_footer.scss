@@ -1,0 +1,16 @@
+
+.footer {
+    text-align: center;    
+}
+
+.footer__wrapper {
+    border-block-start: 2px solid var(--clr-accent-200);
+    padding-block: var(--space-400);
+}
+
+.footer__link {
+    color: var(--clr-accent-100);
+    font-weight: var(--fw-bold);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}

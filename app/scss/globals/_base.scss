@@ -9,6 +9,11 @@ body {
 }
 
 .section-heading {
-    font-size: clamp(var(--fs-700), 2.78rem + 3.57vw, var(--fs-800));
+    font-size: clamp(var(--fs-800), 2.78rem + 3.57vw, var(--fs-900));
     text-transform: uppercase;
+    text-align: center;
+
+    @include u.breakpoint(large) {
+        text-align: start;
+    }
 }
