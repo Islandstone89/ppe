@@ -7,3 +7,8 @@ body {
     background-color: var(--clr-bg);
     color: var(--clr-light);
 }
+
+.section-heading {
+    font-size: clamp(var(--fs-700), 2.78rem + 3.57vw, var(--fs-800));
+    text-transform: uppercase;
+}
