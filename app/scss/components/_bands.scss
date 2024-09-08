@@ -1,4 +1,6 @@
 
+@use '../globals/utilities' as u;
+
 .bands {
     font-family: var(--ff-primary-2);
     font-weight: var(--fw-extrabold);
@@ -29,6 +31,11 @@
 
 .band__name {
     --flow-space: var(--space-300);
+    font-size: var(--fs-600);
+
+    @include u.breakpoint(large) {
+        font-size: var(--fs-400);
+    }
 }
 
 .band__link {

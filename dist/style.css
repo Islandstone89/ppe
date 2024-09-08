@@ -31,6 +31,11 @@ button, input, label {
   line-height: 1.1;
 }
 
+/* Avoid overflowing text */
+:is(h1, h2, h3, h4, h5, h6, p) {
+  overflow-wrap: break-all;
+}
+
 /* Balance text wrapping on headings */
 h1, h2,
 h3, h4 {
@@ -315,6 +320,12 @@ body {
 
 .band__name {
   --flow-space: var(--space-300);
+  font-size: var(--fs-600);
+}
+@media (width > 56.2rem) {
+  .band__name {
+    font-size: var(--fs-400);
+  }
 }
 
 .band__link {
@@ -401,6 +412,7 @@ body {
 }
 
 .deberckt__info__intro__heading {
+  font-size: var(--fs-500);
   text-transform: uppercase;
 }
 
@@ -431,6 +443,7 @@ body {
 }
 
 .feature__content__heading {
+  font-size: var(--fs-400);
   text-transform: uppercase;
 }
 
@@ -448,6 +461,7 @@ body {
 }
 
 .booking__heading {
+  font-size: var(--fs-500);
   color: var(--clr-accent-200);
 }
 
@@ -485,7 +499,7 @@ body {
   text-decoration-thickness: 2px;
   outline: 2px solid var(--clr-light);
   padding: var(--space-400);
-  font-size: clamp(0.75rem, 0.6rem + 0.71vw, 1.25rem);
+  font-size: clamp(var(--fs-100), 0.6rem + 0.71vw, var(--fs-300));
   font-weight: var(--fw-bold);
   border-radius: 5px;
   transition: ease-in-out 0.25s;
@@ -502,6 +516,7 @@ body {
 .footer__wrapper {
   border-block-start: 2px solid var(--clr-accent-200);
   padding-block: var(--space-500) var(--space-400);
+  font-size: var(--fs-200);
 }
 
 .footer__link {

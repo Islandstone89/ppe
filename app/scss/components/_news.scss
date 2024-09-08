@@ -1,4 +1,6 @@
 
+@use '../globals/utilities' as u;
+
 .news__grid {
     --flow-space: var(--space-600);
     --min-width: 250px;
