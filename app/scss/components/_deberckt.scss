@@ -1,11 +1,13 @@
 
 @use '../globals/utilities' as u;
 
+
 .deberckt__intro {
     padding-block: var(--space-200);
 }
 
 .deberckt__info {
+    --flow-space: var(--space-500);
     display: grid;
     grid-template-columns: 1fr;
     gap: var(--space-400);
@@ -19,6 +21,10 @@
     padding-block: var(--space-100);
 }
 
+.deberckt__info__intro__heading {
+    text-transform: uppercase;
+}
+
 .deberckt__info__features {
     text-align: center;
 
@@ -28,6 +34,7 @@
 }
 
 .feature {
+    /* --flow-space: var(); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,8 +53,8 @@
     text-transform: uppercase;
 }
 
-.deberckt__info__intro__heading {
-    text-transform: uppercase;
+.feature__content__text {
+    --flow-space: var(--space-200);
 }
 
 .kasteel {
@@ -55,8 +62,8 @@
 }
 
 .booking {
+    --flow-space: var(--space-500);
     text-align: center;
-    padding-block: var(--space-600);
 }
 
 .booking__heading {
@@ -89,8 +96,7 @@
 }
 
 .order {
-
-    --flow-space: var(--space-500);
+    --flow-space: var(--space-600);
     background-color: var(--clr-accent-500);
     text-transform: uppercase;
     text-decoration: underline;

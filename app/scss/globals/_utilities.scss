@@ -24,6 +24,7 @@ $breakpoints: (
     --inline-padding: .75rem;
     width: min(100% - var(--inline-padding) * 2, var(--max-width));
     margin-inline: auto;
+    padding-block: var(--space-600);
 }
 
 .flow {
