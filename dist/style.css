@@ -304,6 +304,10 @@ body {
   row-gap: var(--grid-row-gap);
 }
 
+.bands__list:has(:hover) .band:not(:hover) {
+  filter: brightness(100%) contrast(100%) saturate(50%) blur(0px) hue-rotate(0deg);
+}
+
 .band {
   position: relative;
   text-transform: uppercase;
@@ -345,6 +349,7 @@ body {
 }
 
 .news__item {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
@@ -353,6 +358,14 @@ body {
   overflow: hidden;
   text-align: center;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+}
+
+.news__item__image {
+  filter: brightness(100%) contrast(100%) saturate(25%) blur(0px) hue-rotate(0deg);
+  transition: all ease-in-out 0.25;
+}
+.news__item__image:is(:hover, :focus-visible) {
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
 }
 
 .news__item__title {
