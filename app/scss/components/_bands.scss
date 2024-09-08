@@ -1,8 +1,9 @@
 
 @use '../globals/utilities' as u;
+@use '../globals/variables' as vars;
 
 .bands {
-    font-family: var(--ff-primary-2);
+    font-family: var(--ff-primary);
     font-weight: var(--fw-extrabold);
 }
 

@@ -19,9 +19,18 @@ $breakpoints: (
     }
 }
 
+.visually-hidden {
+    clip-path: inset(50%);
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+}
+
 .wrapper {
     --max-width: 75rem;
-    --inline-padding: .75rem;
+    --inline-padding: var(--space-300);
     width: min(100% - var(--inline-padding) * 2, var(--max-width));
     margin-inline: auto;
     padding-block: var(--space-600);
@@ -35,11 +44,18 @@ $breakpoints: (
     margin-block-start: var(--flow-space, 1rem);
 }
 
-.visually-hidden {
-    clip-path: inset(50%);
-    position: absolute;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
+.ff-secondary-100 {
+    font-family: var(--ff-secondary-100);
+}
+
+.ff-secondary-200 {
+    font-family: var(--ff-secondary-200);
+}
+
+.ff-secondary-300 {
+    font-family: var(--ff-secondary-300);
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
