@@ -8,7 +8,7 @@
 .deberckt__info {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-200);
+    gap: var(--space-400);
 
     @include u.breakpoint(large) {
         grid-template-columns: 1fr 1fr;
@@ -38,9 +38,25 @@
     }
 }
 
+.feature__icon {
+    align-self: flex-start;
+}
+
+.feature__content__heading {
+    text-transform: uppercase;
+}
+
+.deberckt__info__intro__heading {
+    text-transform: uppercase;
+}
+
+.kasteel {
+    font-weight: var(--fw-bold);
+}
+
 .booking {
     text-align: center;
-    padding-block: var(--space-400);
+    padding-block: var(--space-600);
 }
 
 .booking__heading {
@@ -48,6 +64,7 @@
 }
 
 .booking__grid {
+    --flow-space: var(--space-500);
     --col-count: 1;
     display: grid;
     grid-template-columns: repeat(var(--col-count), 1fr);
