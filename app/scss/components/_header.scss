@@ -5,6 +5,14 @@
 /* HEADER STYLES */
 
 .header {
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.header__wrapper {
+    
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -85,65 +85,73 @@ textarea:not([rows]) {
 }
 
 /* FONTS */
-/* Saira Condensed */
+/* POPPINS */
 @font-face {
-  font-family: "Saira Condensed", sans-serif;
-  src: url("../../../assets/fonts/SairaCondensed-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Saira Condensed", sans-serif;
-  src: url("../../../assets/fonts/SairaCondensed-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-}
-/* Poppins */
-@font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("../../../assets/fonts/Poppins-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
   font-weight: 400;
+  src: url("../assets/fonts/poppins-v21-latin-regular.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("../../../assets/fonts/Poppins-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
   font-weight: 500;
+  src: url("../assets/fonts/poppins-v21-latin-500.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("../../../assets/fonts/Poppins-ExtraBold.woff2") format("woff2");
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
   font-weight: 800;
+  src: url("../assets/fonts/poppins-v21-latin-800.woff2") format("woff2");
 }
-/* Roboto */
+/* SAIRA CONDENSED */
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../../../assets/fonts/Roboto-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-family: "Saira Condensed";
+  font-style: normal;
   font-weight: 400;
+  src: url("../assets/fonts/saira-condensed-v11-latin-regular.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../../../assets/fonts/Roboto-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-family: "Saira Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/saira-condensed-v11-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Saira Condensed";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../assets/fonts/saira-condensed-v11-latin-800.woff2") format("woff2");
+}
+/* ROBOTO */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/roboto-v32-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
+  src: url("../assets/fonts/roboto-v32-latin-500.woff2") format("woff2");
 }
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("../../../assets/fonts/Roboto-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 700;
+  src: url("../assets/fonts/roboto-v32-latin-700.woff2") format("woff2");
 }
-/* Roboto Slab */
-@font-face {
-  font-family: "Roboto Slab", serif;
-  src: url("../../../assets/fonts/RobotoSlab-Regular.woff2") format("woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Roboto Slab", serif;
-  src: url("../../../assets/fonts/RobotoSlab-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Roboto Slab", serif;
-  src: url("../../../assets/fonts/RobotoSlab-Bold.woff2") format("woff2");
-  font-weight: 700;
-}
+/* @use '../assets/fonts/' as fonts; */
 /* CUSTOM PROPERTIES*/
 :root {
   /* PRIMITIVE PROPERTIES */
@@ -157,7 +165,6 @@ textarea:not([rows]) {
   --ff-sans-serif-1: "Saira Condensed", sans-serif;
   --ff-sans-serif-2: "Roboto", sans-serif;
   --ff-sans-serif-3: "Poppins", sans-serif;
-  --ff-serif: "Roboto Slab", serif;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -189,7 +196,6 @@ textarea:not([rows]) {
   --ff-primary: var(--ff-sans-serif-1);
   --ff-secondary-100: var(--ff-sans-serif-2);
   --ff-secondary-200: var(--ff-sans-serif-3);
-  --ff-secondary-300: var(--ff-serif);
   --fs-100: var(--size-16);
   --fs-200: var(--size-18);
   --fs-300: var(--size-20);
@@ -245,6 +251,8 @@ textarea:not([rows]) {
   font-family: var(--ff-secondary-200);
 }
 
+/* @use '../globals/utilities' as u;
+@use '../globals/variables' as vars; */
 /* BASE STYLES */
 body {
   background-color: var(--clr-bg);
@@ -260,6 +268,13 @@ body {
 
 /* HEADER STYLES */
 .header {
+  background-color: blue;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
