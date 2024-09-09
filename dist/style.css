@@ -154,10 +154,10 @@ textarea:not([rows]) {
   --clr-grey: hsl(214, 9%, 45%);
   --clr-desaturated-grey: hsl(0, 0%, 56%);
   --clr-red: #ff0f17;
-  --ff-serif: "Roboto Slab", serif;
   --ff-sans-serif-1: "Saira Condensed", sans-serif;
   --ff-sans-serif-2: "Roboto", sans-serif;
   --ff-sans-serif-3: "Poppins", sans-serif;
+  --ff-serif: "Roboto Slab", serif;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
@@ -241,20 +241,8 @@ textarea:not([rows]) {
   margin-block-start: var(--flow-space, 1rem);
 }
 
-.ff-secondary-100 {
-  font-family: var(--ff-secondary-100);
-}
-
 .ff-secondary-200 {
   font-family: var(--ff-secondary-200);
-}
-
-.ff-secondary-300 {
-  font-family: var(--ff-secondary-300);
-}
-
-.uppercase {
-  text-transform: uppercase;
 }
 
 /* BASE STYLES */
@@ -287,6 +275,7 @@ body {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-weight: var(--fw-medium);
 }
 
 .navbar__link {
@@ -402,7 +391,7 @@ body {
 
 .news__item__title {
   color: var(--clr-accent-100);
-  font-family: var(--ff-primary-1);
+  font-family: var(--ff-secondary-100);
   font-weight: var(--fw-medium);
   font-size: var(--fs-300);
   text-transform: uppercase;
@@ -419,6 +408,10 @@ body {
   text-transform: uppercase;
   padding-block-start: var(--space-200);
   padding-block-end: var(--space-200);
+}
+
+.deberckt {
+  font-family: var(--ff-secondary-100);
 }
 
 .deberckt__intro {
@@ -491,7 +484,7 @@ body {
 }
 
 .booking {
-  --flow-space: var(--space-500);
+  --flow-space: var(--space-600);
   text-align: center;
 }
 
@@ -522,8 +515,8 @@ body {
 }
 
 .booking__option__price {
-  font-size: clamp(var(--fs-600), 2.64rem + 0.53vw, var(--fs-700));
   font-family: var(--ff-primary);
+  font-size: clamp(var(--fs-600), 2.64rem + 0.53vw, var(--fs-700));
   font-weight: var(--fw-bold);
 }
 

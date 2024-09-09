@@ -3,6 +3,10 @@
 @use '../globals/variables' as vars;
 
 
+.deberckt {
+    font-family: var(--ff-secondary-100);
+}
+
 .deberckt__intro {
     padding-block: var(--space-200);
 }
@@ -70,7 +74,7 @@
 }
 
 .booking {
-    --flow-space: var(--space-500);
+    --flow-space: var(--space-600);
     text-align: center;
 }
 
@@ -102,8 +106,8 @@
 }
 
 .booking__option__price {
-    font-size: clamp(var(--fs-600), 2.64rem + 0.53vw, var(--fs-700));
     font-family: var(--ff-primary);
+    font-size: clamp(var(--fs-600), 2.64rem + 0.53vw, var(--fs-700));
     font-weight: var(--fw-bold);
 }
 

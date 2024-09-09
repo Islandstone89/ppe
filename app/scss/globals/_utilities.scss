@@ -13,12 +13,6 @@ $breakpoints: (
     }
 }
 
-@mixin breakpoint-down($size) {
-    @media (width < map-get($breakpoints-down, $size)) {
-        @content;
-    }
-}
-
 .visually-hidden {
     clip-path: inset(50%);
     position: absolute;
@@ -44,18 +38,6 @@ $breakpoints: (
     margin-block-start: var(--flow-space, 1rem);
 }
 
-.ff-secondary-100 {
-    font-family: var(--ff-secondary-100);
-}
-
 .ff-secondary-200 {
     font-family: var(--ff-secondary-200);
-}
-
-.ff-secondary-300 {
-    font-family: var(--ff-secondary-300);
-}
-
-.uppercase {
-    text-transform: uppercase;
 }
