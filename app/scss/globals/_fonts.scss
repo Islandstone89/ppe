@@ -4,78 +4,78 @@
 /* POPPINS */
 
 @font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'); 
-  }
- 
-  @font-face {
-    font-display: swap; 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../assets/fonts/poppins-v21-latin-500.woff2') format('woff2'); 
-  }
- 
-  @font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../assets/fonts/poppins-v21-latin-800.woff2') format('woff2'); 
-  }
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../app/scss/assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'); 
+}
 
-  /* SAIRA CONDENSED */
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../../app/scss/assets/fonts/poppins-v21-latin-500.woff2') format('woff2'); 
+}
 
-    @font-face {
-    font-display: swap; 
-    font-family: 'Saira Condensed';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/saira-condensed-v11-latin-regular.woff2') format('woff2'); 
-  }
-  
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../../../app/scss/assets/fonts/poppins-v21-latin-800.woff2') format('woff2'); 
+}
+
+/* SAIRA CONDENSED */
+
   @font-face {
-    font-display: swap; 
-    font-family: 'Saira Condensed';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../assets/fonts/saira-condensed-v11-latin-700.woff2') format('woff2'); 
-  }
- 
-  @font-face {
-    font-display: swap; 
-    font-family: 'Saira Condensed';
-    font-style: normal;
-    font-weight: 800;
-    src: url('../assets/fonts/saira-condensed-v11-latin-800.woff2') format('woff2');
-  }
+  font-display: swap; 
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../app/scss/assets/fonts/saira-condensed-v11-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../../app/scss/assets/fonts/saira-condensed-v11-latin-700.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Saira Condensed';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../../../app/scss/assets/fonts/saira-condensed-v11-latin-800.woff2') format('woff2');
+}
 
 
-  /* ROBOTO */
+/* ROBOTO */
 
-    @font-face {
-    font-display: swap; 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/roboto-v32-latin-regular.woff2') format('woff2'); 
-  }
-  
   @font-face {
-    font-display: swap; 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../assets/fonts/roboto-v32-latin-500.woff2') format('woff2'); 
-  }
-  
-  @font-face {
-    font-display: swap; 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../assets/fonts/roboto-v32-latin-700.woff2') format('woff2'); 
-  }
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../../app/scss/assets/fonts/roboto-v32-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../../app/scss/assets/fonts/roboto-v32-latin-500.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../../app/scss/assets/fonts/roboto-v32-latin-700.woff2') format('woff2'); 
+}
