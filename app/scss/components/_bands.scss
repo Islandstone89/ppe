@@ -10,8 +10,8 @@
 .bands__list {
     --flow-space: var(--space-500);
     --min-width: 350px;
-    --grid-column-gap: var(--space-px-100);
-    --grid-row-gap: var(--space-px-200);
+    --grid-column-gap: var(--space-px-200);
+    --grid-row-gap: var(--space-px-300);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-width)), 1fr));
     column-gap: var(--grid-column-gap);

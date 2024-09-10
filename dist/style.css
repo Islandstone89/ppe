@@ -182,6 +182,7 @@ textarea:not([rows]) {
   --size-56: 3.5rem;
   --size-96: 6rem;
   --size-120: 7.5rem;
+  --size-px-10: 10px;
   --size-px-20: 20px;
   --size-px-32: 32px;
   /* SEMANTIC PROPERTIES */
@@ -216,8 +217,9 @@ textarea:not([rows]) {
   --space-400: var(--size-24);
   --space-500: var(--size-28);
   --space-600: var(--size-56);
-  --space-px-100: var(--size-px-20);
-  --space-px-200: var(--size-px-32);
+  --space-px-100: var(--size-px-10);
+  --space-px-200: var(--size-px-20);
+  --space-px-300: var(--size-px-32);
 }
 
 /* UTILITIES */
@@ -329,8 +331,8 @@ body {
 .bands__list {
   --flow-space: var(--space-500);
   --min-width: 350px;
-  --grid-column-gap: var(--space-px-100);
-  --grid-row-gap: var(--space-px-200);
+  --grid-column-gap: var(--space-px-200);
+  --grid-row-gap: var(--space-px-300);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-width)), 1fr));
   -moz-column-gap: var(--grid-column-gap);
@@ -375,8 +377,8 @@ body {
 .news__grid {
   --flow-space: var(--space-600);
   --min-width: 250px;
-  --grid-column-gap: var(--space-px-200);
-  --grid-row-gap: var(--space-px-200);
+  --grid-column-gap: var(--space-px-300);
+  --grid-row-gap: var(--space-px-300);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-width)), 1fr));
   -moz-column-gap: var(--grid-column-gap);
@@ -557,6 +559,22 @@ body {
 .order:is(:hover, :focus-visible) {
   background-color: var(--clr-light);
   color: var(--clr-dark);
+}
+
+.gallery {
+  --flow-space: var(--space-600);
+  --min-width: 250px;
+  --gap: var(--space-px-100);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min-width)), 1fr));
+  gap: var(--gap);
+}
+
+.gallery__image {
+  transition: ease-in-out 0.25s;
+}
+.gallery__image:is(:hover, :focus-visible) {
+  opacity: 0.7;
 }
 
 .footer {
