@@ -3,10 +3,6 @@
 @use '../globals/variables' as vars;
 
 
-.deberckt {
-    font-family: var(--ff-secondary-100);
-}
-
 .deberckt__intro {
     padding-block: var(--space-200);
 }
@@ -27,8 +23,6 @@
 }
 
 .deberckt__info__intro__heading {
-    font-family: var(--ff-secondary-1);
-    font-weight: var(--fw-semibold);
     font-size: var(--fs-500);
     text-transform: uppercase;
 }
@@ -59,18 +53,12 @@
 }
 
 .feature__content__heading {
-    font-family: var(--ff-secondary-2);
     font-size: var(--fs-400);
-    font-weight: var(--fw-extrabold);
     text-transform: uppercase;
 }
 
 .feature__content__text {
     --flow-space: var(--space-200);
-}
-
-.kasteel {
-    font-weight: var(--fw-bold);
 }
 
 .booking {
@@ -79,8 +67,6 @@
 }
 
 .booking__heading {
-    font-family: var(--ff-secondary-1);
-    font-weight: var(--fw-semibold);
     font-size: var(--fs-500);
     color: var(--clr-accent-200);
 }
@@ -97,23 +83,18 @@
     }
 }
 
-
-
 .booking__option__heading {
     text-transform: uppercase;
     font-size: clamp(var(--fs-100), 0.93rem + 0.35vw, var(--fs-300));
-    font-family: var(--ff-secondary-2);
 }
 
 .booking__option__price {
-    font-family: var(--ff-primary);
     font-size: clamp(var(--fs-600), 2.64rem + 0.53vw, var(--fs-700));
-    font-weight: var(--fw-bold);
 }
 
 .booking__option__time {
     --flow-space: var(--space-100);
-    font-family: var(--ff-primary-1);
+    font-size: var(--fs-100);
 }
 
 .order {
@@ -125,8 +106,6 @@
     outline: 2px solid var(--clr-light);
     padding: var(--space-400);
     font-size: clamp(var(--fs-100), 0.60rem + 0.71vw, var(--fs-300));
-    font-family: var(--ff-secondary-2);
-    font-weight: var(--fw-bold);
     border-radius: 5px;
     transition: ease-in-out .25s;
 

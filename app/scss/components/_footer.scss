@@ -1,12 +1,12 @@
 
 .footer {
-    text-align: center;    
+    text-align: center;
+    font-family: var(--ff-secondary-200); 
 }
 
 .footer__wrapper {
     border-block-start: 2px solid var(--clr-accent-200);
     padding-block: var(--space-500) var(--space-400);
-    font-size: var(--fs-200);
 }
 
 .footer__link {

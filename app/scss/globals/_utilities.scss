@@ -38,6 +38,34 @@ $breakpoints: (
     margin-block-start: var(--flow-space, 1rem);
 }
 
+.ff-secondary-100 {
+    font-family: var(--ff-secondary-100);
+}
+
 .ff-secondary-200 {
     font-family: var(--ff-secondary-200);
+}
+
+.ff-secondary-300 {
+    font-family: var(--ff-secondary-300);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fw-semibold {
+    font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
+}
+
+.fw-extrabold {
+    font-weight: var(--fw-extrabold);
 }

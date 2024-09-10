@@ -36,8 +36,6 @@
 
 .news__item__title {
     color: var(--clr-accent-100);
-    font-family: var(--ff-secondary-100);
-    font-weight: var(--fw-medium);
     font-size: var(--fs-300);
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -48,7 +46,6 @@
 
 .news__item__date {
     color: var(--clr-accent-400);
-    font-family: var(--ff-secondary-2);
     font-size: var(--fs-200);
     text-transform: uppercase;
     padding-block-start: var(--space-200);

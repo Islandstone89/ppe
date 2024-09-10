@@ -2,11 +2,6 @@
 @use '../globals/utilities' as u;
 @use '../globals/variables' as vars;
 
-.bands {
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-extrabold);
-}
-
 .bands__list {
     --flow-space: var(--space-500);
     --min-width: 350px;
@@ -25,15 +20,14 @@
 .band {
     position: relative;
     text-transform: uppercase;
-    font-weight: var(--fw-extrabold);
     letter-spacing: 0.01em;
     text-align: center;
 }
 
 .band__name {
     --flow-space: var(--space-300);
-    font-size: var(--fs-600);
-
+    font-size: var(--fs-800);
+    
     @include u.breakpoint(large) {
         font-size: var(--fs-400);
     }
