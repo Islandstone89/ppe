@@ -91,7 +91,7 @@ textarea:not([rows]) {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("/app") format("woff2");
+  src: url("/app/scss/assets/fonts/poppins-v21-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
