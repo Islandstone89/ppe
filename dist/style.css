@@ -91,14 +91,14 @@ textarea:not([rows]) {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../../../") format("woff2");
+  src: url("../../poppins-v21-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url("../../poppins-v21-latin-regular.woff2") format("woff2");
+  src: url("../../../app/scss/assets/fonts/poppins-v21-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
