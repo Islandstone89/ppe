@@ -195,6 +195,7 @@ textarea:not([rows]) {
   --size-44: 2.75rem;
   --size-50: 3.125rem;
   --size-56: 3.5rem;
+  --size-72: 4.5rem;
   --size-96: 6rem;
   --size-120: 7.5rem;
   --size-px-10: 10px;
@@ -232,7 +233,10 @@ textarea:not([rows]) {
   --space-300: var(--size-20);
   --space-400: var(--size-24);
   --space-500: var(--size-28);
-  --space-600: var(--size-56);
+  --space-600: var(--size-32);
+  --space-700: var(--size-44);
+  --space-800: var(--size-56);
+  --space-900: var(--size-72);
   --space-px-100: var(--size-px-10);
   --space-px-200: var(--size-px-20);
   --space-px-300: var(--size-px-32);
@@ -254,7 +258,7 @@ textarea:not([rows]) {
   --inline-padding: var(--space-300);
   width: min(100% - var(--inline-padding) * 2, var(--max-width));
   margin-inline: auto;
-  padding-block: var(--space-600);
+  padding-block: var(--space-800);
 }
 
 .flow {
@@ -406,7 +410,7 @@ body {
 }
 
 .news__grid {
-  --flow-space: var(--space-600);
+  --flow-space: var(--space-800);
   --min-width: 250px;
   --grid-column-gap: var(--space-px-300);
   --grid-row-gap: var(--space-px-300);
@@ -481,6 +485,7 @@ body {
 }
 
 .deberckt__info__features {
+  --flow-space: var(--space-700);
   text-align: center;
 }
 @media (width > 56.2rem) {
@@ -517,7 +522,7 @@ body {
 }
 
 .booking {
-  --flow-space: var(--space-600);
+  --flow-space: var(--space-800);
   text-align: center;
 }
 
@@ -529,13 +534,15 @@ body {
 .booking__grid {
   --flow-space: var(--space-500);
   --col-count: 1;
+  --grid-gap: var(--space-800);
   display: grid;
   grid-template-columns: repeat(var(--col-count), 1fr);
-  gap: var(--space-300);
+  gap: var(--grid-gap);
 }
 @media (width > 56.2rem) {
   .booking__grid {
     --col-count: 4;
+    --grid-gap: var(--space-300);
   }
 }
 
@@ -554,7 +561,7 @@ body {
 }
 
 .order {
-  --flow-space: var(--space-600);
+  --flow-space: var(--space-800);
   background-color: var(--clr-accent-500);
   text-transform: uppercase;
   text-decoration: underline;
@@ -571,7 +578,7 @@ body {
 }
 
 .gallery {
-  --flow-space: var(--space-600);
+  --flow-space: var(--space-900);
   --min-width: 250px;
   --gap: var(--space-px-100);
   display: grid;

@@ -28,6 +28,7 @@
 }
 
 .deberckt__info__features {
+    --flow-space: var(--space-700);
     text-align: center;
 
     @include u.breakpoint(large) {
@@ -62,7 +63,7 @@
 }
 
 .booking {
-    --flow-space: var(--space-600);
+    --flow-space: var(--space-800);
     text-align: center;
 }
 
@@ -74,12 +75,14 @@
 .booking__grid {
     --flow-space: var(--space-500);
     --col-count: 1;
+    --grid-gap: var(--space-800);
     display: grid;
     grid-template-columns: repeat(var(--col-count), 1fr);
-    gap: var(--space-300);
+    gap: var(--grid-gap);
 
     @include u.breakpoint(large) {
         --col-count: 4;
+        --grid-gap: var(--space-300);
     }
 }
 
@@ -98,7 +101,7 @@
 }
 
 .order {
-    --flow-space: var(--space-600);
+    --flow-space: var(--space-800);
     background-color: var(--clr-accent-500);
     text-transform: uppercase;
     text-decoration: underline;
@@ -116,7 +119,7 @@
 }
 
 .gallery {
-    --flow-space: var(--space-600);
+    --flow-space: var(--space-900);
     --min-width: 250px;
     --gap: var(--space-px-100);
     display: grid;
