@@ -380,7 +380,7 @@ body {
 }
 
 .bands__list:has(:hover) .band:not(:hover) {
-  filter: brightness(100%) contrast(100%) saturate(50%) blur(0px) hue-rotate(0deg);
+  filter: brightness(100%) contrast(100%) saturate(30%) blur(0px) hue-rotate(0deg);
 }
 
 .band {
